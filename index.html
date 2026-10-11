@@ -10,30 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="light-mode">
+  <body class="light-mode" data-page="home">
     <header class="site-header" id="site-header">
-      <a class="wordmark" href="#home" aria-label="Palak Shah home">Palak Shah</a>
+      <a class="wordmark" href="index.html" aria-label="Palak Shah home">Palak Shah</a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#projects">Projects</a><a href="#content">Content</a><a href="#resume">Resume</a><button class="theme-toggle" type="button" aria-label="Switch to light mode">☼</button><a class="nav-cta" href="#contact">Let’s connect</a>
+        <a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><button class="theme-toggle" type="button" aria-label="Switch to dark mode">☼</button><a class="nav-cta" href="contact.html">Let’s connect</a>
       </nav>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     </header>
     <div class="mobile-nav" aria-hidden="true">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#content">Content</a><a href="#resume">Resume</a><button class="theme-toggle mobile-theme" type="button" aria-label="Switch to light mode">☼ &nbsp; Toggle mode</button><a href="#contact">Let’s connect</a>
+      <a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><button class="theme-toggle mobile-theme" type="button" aria-label="Switch to dark mode">☼ &nbsp; Toggle mode</button><a href="contact.html">Let’s connect</a>
     </div>
 
     <main>
       <section class="hero section-dark" id="home">
         <div class="hero-copy reveal">
           <p class="eyebrow">Creative strategist · Brand · Community · Founder’s office</p>
-          <h1>I help founders turn ideas into <em>brands</em> and communities people want to be part of.</h1>
+          <h1>I help founders build <em>brands, communities</em> and momentum.</h1>
           <p class="hero-sub">And build the systems that help them grow.</p>
-          <div class="button-row"><a class="button button-primary" href="#projects">Explore projects <span>→</span></a><a class="button button-ghost" href="#contact">Let’s connect <span>→</span></a></div>
+          <div class="button-row"><a class="button button-primary" href="projects.html">Explore projects <span>→</span></a><a class="button button-ghost" href="contact.html">Let’s connect <span>→</span></a></div>
         </div>
-        <div class="camera-portrait reveal" aria-label="Portrait placeholder with cameras">
+        <div class="camera-portrait reveal" aria-label="Palak Shah holding a camera">
           <img class="hero-portrait-image" src="hero-portrait.png" alt="Palak Shah holding a camera" />
         </div>
       </section>
+
+      <div class="home-marquee" aria-label="Areas of work"><div>CREATIVE STRATEGY&nbsp; ★ &nbsp;FOUNDER’S OFFICE&nbsp; ★ &nbsp;BRAND BUILDING&nbsp; ★ &nbsp;COMMUNITY&nbsp; ★ &nbsp;CONTENT&nbsp; ★ &nbsp;CREATIVE STRATEGY&nbsp; ★ &nbsp;FOUNDER’S OFFICE&nbsp; ★ &nbsp;BRAND BUILDING&nbsp; ★ &nbsp;COMMUNITY&nbsp; ★ &nbsp;CONTENT&nbsp; ★</div></div>
 
       <section class="logo-section section-light section-pad" id="brands">
         <div class="section-heading"><p class="eyebrow blue">Selected collaborators</p><h2>Brands and teams I’ve worked with.</h2></div>
@@ -41,51 +43,33 @@
       </section>
 
       <section class="about-preview section-blue section-pad" id="about">
-        <div class="about-label"><p class="eyebrow">A little about me</p><span class="outline-number">01</span></div>
-        <div class="about-copy"><h2>Hi, I’m Palak.</h2><p>I want to help founders turn their ideas into brands, communities and experiences people want to be part of. I enjoy working across strategy, content, operations and execution to help those ideas take shape.</p><p>My work can move from building a campaign to shooting a video, planning an event, improving a system or figuring out how to bring the right people together.</p><p>When I’m not working, I’m probably in the mountains, talking too much about something I like, or planning a 10K my brain is convinced I can finish in an hour.</p><a class="text-link" href="#about-page">More about me <span>→</span></a></div>
+        <div class="about-label"><p class="eyebrow">A little about me</p></div>
+        <div class="about-copy"><h2>Hi, I’m Palak.</h2><p>I enjoy working across strategy, content, operations and execution to help ideas take shape.</p><p>My work can move from building a campaign to shooting a video, planning an event, improving a system or figuring out how to bring the right people together.</p><p>When I’m not working, I’m probably in the mountains, talking too much about something I like, or planning a 10K my brain is convinced I can finish in an hour.</p><a class="text-link" href="about.html">More about me <span>→</span></a></div>
       </section>
 
       <section class="toolkit section-light section-pad" id="toolkit">
-        <div class="section-heading"><p class="eyebrow blue">Toolkit</p><h2>The tools I use to think, make and build.</h2></div>
-        <div class="tool-grid" id="tool-grid"></div>
-        <div class="equipment"><p class="eyebrow blue">Equipment</p><div class="equipment-list"><span>Cameras</span><span>FX3</span><span>iPhone</span></div></div>
+        <div class="section-heading"><p class="eyebrow blue">Skills & expertise</p><h2>What I bring to the work.</h2></div>
+        <div class="expertise-grid"><article><span class="expertise-number">01</span><h3>Strategy & Brand</h3><p>I turn a brief, problem or early idea into a clearer direction.</p><ul><li>Creative Strategy</li><li>Campaign Planning</li><li>Consumer Research</li><li>Performance Marketing</li></ul></article><article><span class="expertise-number">02</span><h3>Content & Creative</h3><p>I help ideas move from a thought on paper to something people can see and feel.</p><ul><li>Content Creation</li><li>Videography</li><li>Editing</li><li>Photography</li><li>Brand Storytelling</li></ul></article><article><span class="expertise-number">03</span><h3>Community & Operations</h3><p>I work across people, platforms and details to keep things moving.</p><ul><li>Community Building</li><li>Event Operations</li><li>Marketplace Operations</li></ul></article></div>
+        <div class="tools-block"><p class="eyebrow blue">Tools</p><div class="tool-grid" id="tool-grid"></div></div>
       </section>
 
-      <section class="projects section-dark section-pad" id="projects">
-        <div class="section-heading split-heading"><div><p class="eyebrow">Selected work</p><h2>Ideas, people and execution.</h2></div><p class="section-intro">Businesses I helped grow, communities I helped build and creative work I helped bring to life.</p></div>
-        <div class="category-grid"><button data-filter="business"><span>01</span><strong>Business & Entrepreneurship</strong><i>→</i></button><button data-filter="community"><span>02</span><strong>Community & Operations</strong><i>→</i></button><button data-filter="creative"><span>03</span><strong>Creative Strategy</strong><i>→</i></button></div>
-        <div class="project-grid" id="project-grid"></div>
+      <section class="home-work-preview section-light section-pad" id="projects">
+        <div class="section-heading split-heading"><div><p class="eyebrow blue">A peek into my work</p><h2>Work that moves<br /><em>from idea to action.</em></h2></div><a class="text-link" href="projects.html">View all projects <span>→</span></a></div>
+        <div class="home-preview-grid">
+          <a href="projects.html?project=Oasis" class="home-preview-card"><span>01 / BUSINESS</span><strong>Oasis</strong><p>Marketplace and social media operations for a family stationery and gifting business.</p></a>
+          <a href="projects.html?project=Asan" class="home-preview-card"><span>02 / CREATIVE STRATEGY</span><strong>Asan</strong><p>A brand proposal focused on Gen Z awareness and sales.</p></a>
+          <a href="projects.html?project=Stargazing%20Mumbai" class="home-preview-card"><span>03 / COMMUNITY</span><strong>Stargazing Mumbai</strong><p>Social content and live event support for stargazing experiences.</p></a>
+          <a href="projects.html?project=Sports%20Yard" class="home-preview-card"><span>04 / CREATIVE STRATEGY</span><strong>Sports Yard</strong><p>On-ground consumer research before making brand recommendations.</p></a>
+        </div>
       </section>
 
-      <section class="content-section section-light section-pad" id="content">
-        <div class="section-heading split-heading"><div><p class="eyebrow blue">Content</p><h2>Creative work that actually ships.</h2></div><p class="section-intro dark-text">A growing archive of video, photography, events, websites and social content.</p></div>
-        <div class="filter-row" id="content-filters"><button class="active" data-content-filter="all">All</button><button data-content-filter="video">Video</button><button data-content-filter="photography">Photography</button><button data-content-filter="events">Events</button><button data-content-filter="websites">Websites</button></div>
-        <div class="media-grid" id="media-grid"></div>
-        <div class="content-grid" id="content-grid"></div>
-      </section>
-
-      <section class="resume-section section-blue section-pad" id="resume">
-        <div class="section-heading split-heading"><div><p class="eyebrow">Resume</p><h2>The work, on paper.</h2></div><a class="button button-primary light-button" href="resume.pdf" download>Download resume PDF <span>→</span></a></div>
-        <p class="resume-lede">Operations, marketplaces, events and content — everything I’ve run, built and shipped, in one place.</p>
-        <div class="highlights"><div><strong>80+</strong><span>volunteers led</span></div><div><strong>50+</strong><span>SKUs managed</span></div><div><strong>₹25K</strong><span>day-one pop-up revenue</span></div><div><strong>9.18</strong><span>CGPA / 10</span></div></div>
-        <div class="timeline" id="timeline"></div>
-      </section>
-
-      <section class="about-page section-light section-pad" id="about-page">
-        <div class="section-heading"><p class="eyebrow blue">More about me</p><h2>My little creative corner.</h2></div>
-        <div class="fun-about-intro"><p class="large-copy">hey, I am Palak Shah.<br /><em>welcome to my little creative corner.</em></p><p class="fun-yap">I yap for 3 hrs about things I like and get paid for it.</p></div>
-        <div class="fun-facts"><article class="fun-card tilt-left"><span>01 / FIELD NOTES</span><strong>Co-led my first trek without knowing the full route.</strong><p>Figured it out in real time. We got there.</p></article><article class="fun-card tilt-right"><span>02 / CURRENT OBSESSION</span><strong>Every chance I get, I end up in the mountains.</strong><p>Usually with too many plans and not enough socks.</p></article><article class="fun-card tilt-left"><span>03 / DELUSION</span><strong>My brain genuinely believes I can run a 10K in an hour.</strong><p>— My brain, confidently wrong, every single time.</p></article></div>
-        <div class="education-note"><p class="eyebrow blue">Education</p><div class="education-item"><h3>St. Xavier’s College</h3><p class="education-meta">BA — Psychology, Ancient Indian Culture and History · CGPA 9.18/10 · Years to be added</p><p>I studied Ancient Indian Culture and Psychology. So now I know about both alive and dead humans.</p></div><div class="education-item"><h3>The LIT School</h3><p class="education-meta">Creator Marketer Program · 2025–2026</p><p>A year of working on brand briefs, campaigns, content, events and ideas by actually doing the work.</p></div></div>
-        <div class="beyond-work"><p class="eyebrow blue">Me beyond work</p><div><span>🎬</span><span>🌿</span><span>✨</span><span>⛰</span></div></div>
-      </section>
-
-      <section class="contact section-dark section-pad" id="contact"><p class="eyebrow">Get in touch</p><h2>If you’ve made it this far,<br /><em>we should probably talk.</em></h2><p>Whether you have an idea, a project, a problem to solve, or simply want to say hello, I’d love to hear from you.</p><div class="button-row"><a class="button button-primary" href="mailto:work.palakshah@gmail.com">Email me →</a><a class="button button-ghost" href="tel:+917021468266">Call me →</a></div><div class="contact-links"><a href="mailto:work.palakshah@gmail.com">work.palakshah@gmail.com</a><a href="tel:+917021468266">7021468266</a><a href="https://www.linkedin.com/in/palak-shah-347aa4200" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/pakamatpalak/" target="_blank" rel="noreferrer">Instagram</a></div></section>
+      <section class="contact section-dark section-pad" id="contact"><div class="contact-doodles" aria-hidden="true"></div><div class="contact-main"><h2>If you’ve made it this far,<br /><em>we should probably talk.</em></h2><p>Whether you have an idea, a project, a problem to solve, or simply want to say hello, I’d love to hear from you.</p><div class="button-row"><a class="button button-primary" href="mailto:work.palakshah@gmail.com">Email me →</a></div></div><nav class="contact-side-links" aria-label="More links"><a href="https://www.instagram.com/pakamatpalak/" target="_blank" rel="noreferrer">Stalk me here — <span>Instagram</span></a><a href="https://www.linkedin.com/in/palak-shah-347aa4200" target="_blank" rel="noreferrer">Stalk formal stuff here — <span>LinkedIn</span></a><a href="https://www.instagram.com/oasisartstudio.in/" target="_blank" rel="noreferrer">Buy cute crochet stuff here — <span>Oasis Art Studio</span></a><a href="mailto:work.palakshah@gmail.com">For formal stuff — <span>Email</span></a></nav></section>
     </main>
 
-    <footer class="footer section-dark"><div><a class="wordmark" href="#home">Palak Shah</a><p>Creative work that actually ships.</p></div><div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#content">Content</a><a href="#resume">Resume</a><a href="#contact">Let’s connect</a></div></footer>
-    <div class="modal" id="project-modal" aria-hidden="true"><div class="modal-inner"><button class="modal-close" aria-label="Close project">×</button><p class="eyebrow blue" id="modal-category"></p><h2 id="modal-title"></h2><p id="modal-summary"></p><div class="modal-meta"><div><span>Role</span><strong id="modal-role"></strong></div><div><span>Tools</span><strong id="modal-tools"></strong></div></div><div class="modal-body" id="modal-body"></div></div></div>
-    <div class="modal" id="media-modal" aria-hidden="true"><div class="modal-inner"><button class="modal-close media-modal-close" aria-label="Close media group">×</button><p class="eyebrow blue">Creative Strategy</p><h2>Tell Me Why</h2><p>Three episodes from the series.</p><div class="media-episode-grid" id="media-episode-grid"></div></div></div>
-    <div class="modal" id="brand-modal" aria-hidden="true"><div class="modal-inner"><button class="modal-close brand-modal-close" aria-label="Close brand work">×</button><p class="eyebrow blue">Selected work</p><h2 id="brand-modal-title"></h2><div class="brand-work-list" id="brand-work-list"></div></div></div>
+    <footer class="footer section-dark"><div><a class="wordmark" href="index.html">Palak Shah</a><p>Strategy, content &amp; operations.</p></div><div class="footer-links"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><a href="contact.html">Let’s connect</a></div></footer>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="project-modal" aria-hidden="true"><div class="modal-inner project-case-study"><button class="modal-close" aria-label="Close project">×</button><p class="eyebrow blue" id="modal-category"></p><h2 id="modal-title"></h2><p id="modal-summary"></p><div class="modal-meta case-study-meta"><div><span>My role</span><strong id="modal-role"></strong></div><div><span>Format</span><strong id="modal-format"></strong></div><div><span>Project focus</span><strong id="modal-focus"></strong></div></div><nav class="case-study-nav" aria-label="Project sections"><a href="#modal-brief">01 / The brief</a><a href="#modal-contribution">02 / My contribution</a><a href="#modal-proof">03 / Proof of work</a><a href="#modal-experience">04 / My experience</a><a href="#modal-takeaway">05 / What I take forward</a></nav><section class="case-study-section" id="modal-brief"><span class="case-study-kicker">01 / THE STARTING POINT</span><h3>The brief</h3><p id="modal-brief-text"></p></section><section class="case-study-section" id="modal-contribution"><span class="case-study-kicker">02 / MY PART IN IT</span><h3>My contribution</h3><p id="modal-contribution-text"></p><div class="case-study-disciplines"><span>Project disciplines</span><strong id="modal-disciplines"></strong></div></section><section class="case-study-section" id="modal-proof"><span class="case-study-kicker">03 / THE ACTUAL WORK</span><h3>Proof of work</h3><p id="modal-proof-text"></p><div id="modal-gallery" class="modal-gallery"></div><div id="modal-link"></div></section><section class="case-study-section" id="modal-experience"><span class="case-study-kicker">04 / BEHIND THE WORK</span><h3>My experience</h3><p id="modal-experience-text"></p></section><section class="case-study-section" id="modal-takeaway"><span class="case-study-kicker">05 / WHAT I TAKE FORWARD</span><h3 id="modal-takeaway-text"></h3></section></div></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Video series" id="media-modal" aria-hidden="true"><div class="modal-inner"><button class="modal-close media-modal-close" aria-label="Close media group">×</button><p class="eyebrow blue">Creative Strategy</p><h2>Tell Me Why</h2><p>Three episodes from the series.</p><div class="media-episode-grid" id="media-episode-grid"></div></div></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="brand-modal-title" id="brand-modal" aria-hidden="true"><div class="modal-inner"><button class="modal-close brand-modal-close" aria-label="Close brand work">×</button><p class="eyebrow blue">Selected work</p><h2 id="brand-modal-title"></h2><div class="brand-work-list" id="brand-work-list"></div></div></div>
     <script src="app.js"></script>
   </body>
 </html>

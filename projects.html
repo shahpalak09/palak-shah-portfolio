@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Palak Shah — creative strategy, founder's office, brand, community and operations." />
+    <title>Projects — Palak Shah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="light-mode" data-page="projects">
+    <header class="site-header"><a class="wordmark" href="index.html" aria-label="Palak Shah home">Palak Shah</a><nav class="desktop-nav" aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><button class="theme-toggle" type="button" aria-label="Switch to dark mode">☼</button><a class="nav-cta" href="contact.html">Let’s connect</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+    <div class="mobile-nav" aria-hidden="true"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><button class="theme-toggle mobile-theme" type="button">☼ &nbsp; Toggle mode</button><a href="contact.html">Let’s connect</a></div>
+    <main>
+      <section class="page-hero section-dark section-pad"><p class="eyebrow">Selected work</p><h1>Ideas, people<br /><em>and execution.</em></h1><p class="page-hero-copy">A complete archive of businesses, communities and creative strategy projects I have helped build, run or bring to life.</p></section>
+      <section class="projects section-dark section-pad independent-list"><div class="filter-row"><button class="active" data-filter="all">All projects</button></div><div class="category-grid"><button data-filter="business"><span>01</span><strong>Business & Entrepreneurship</strong><i>→</i></button><button data-filter="community"><span>02</span><strong>Community & Operations</strong><i>→</i></button><button data-filter="creative"><span>03</span><strong>Creative Strategy</strong><i>→</i></button></div><div class="project-grid" id="project-grid"></div></section>
+    </main>
+    <footer class="footer section-dark"><div><a class="wordmark" href="index.html">Palak Shah</a><p>Strategy, content &amp; operations.</p></div><div class="footer-links"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="content.html">Content</a><a href="resume.html">Resume</a><a href="contact.html">Let’s connect</a></div></footer>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="project-modal" aria-hidden="true"><div class="modal-inner project-case-study"><button class="modal-close" aria-label="Close project">×</button><p class="eyebrow blue" id="modal-category"></p><h2 id="modal-title"></h2><p id="modal-summary"></p><div class="modal-meta case-study-meta"><div><span>My role</span><strong id="modal-role"></strong></div><div><span>Format</span><strong id="modal-format"></strong></div><div><span>Project focus</span><strong id="modal-focus"></strong></div></div><nav class="case-study-nav" aria-label="Project sections"><a href="#modal-brief">01 / The brief</a><a href="#modal-contribution">02 / My contribution</a><a href="#modal-proof">03 / Proof of work</a><a href="#modal-experience">04 / My experience</a><a href="#modal-takeaway">05 / What I take forward</a></nav><section class="case-study-section" id="modal-brief"><span class="case-study-kicker">01 / THE STARTING POINT</span><h3>The brief</h3><p id="modal-brief-text"></p></section><section class="case-study-section" id="modal-contribution"><span class="case-study-kicker">02 / MY PART IN IT</span><h3>My contribution</h3><p id="modal-contribution-text"></p><div class="case-study-disciplines"><span>Project disciplines</span><strong id="modal-disciplines"></strong></div></section><section class="case-study-section" id="modal-proof"><span class="case-study-kicker">03 / THE ACTUAL WORK</span><h3>Proof of work</h3><p id="modal-proof-text"></p><div id="modal-gallery" class="modal-gallery"></div><div id="modal-link"></div></section><section class="case-study-section" id="modal-experience"><span class="case-study-kicker">04 / BEHIND THE WORK</span><h3>My experience</h3><p id="modal-experience-text"></p></section><section class="case-study-section" id="modal-takeaway"><span class="case-study-kicker">05 / WHAT I TAKE FORWARD</span><h3 id="modal-takeaway-text"></h3></section></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
