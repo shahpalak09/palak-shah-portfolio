@@ -58,3 +58,171 @@ body.light-mode[data-page="home"] .contact .contact-side-links a{color:#fff}
 body.light-mode[data-page="home"] .contact .contact-side-links span{color:#fff}
 body.light-mode .logo-grid button{background:#fff}body.light-mode .logo-grid button:hover{background:#fff;outline:1px solid #071a3d}
 .brand-work-list button.text-link{color:inherit;background:transparent;border:0;font:inherit;cursor:pointer}
+
+/* Compact homepage contact and requested logo refinements. */
+body[data-page="home"] #contact{
+  min-height:0;
+  padding-top:56px;
+  padding-bottom:100px;
+  grid-template-columns:minmax(0,1.2fr) minmax(300px,1fr);
+  gap:5vw;
+  align-items:center;
+}
+body[data-page="home"] #contact h2{
+  font-size:clamp(2.6rem,4.2vw,4.5rem);
+  line-height:1.05;
+  margin-bottom:22px;
+}
+body[data-page="home"] #contact .contact-main>p{
+  font-size:1rem;
+  line-height:1.55;
+  max-width:500px;
+  margin:0 0 24px;
+}
+body[data-page="home"] #contact .button-row{margin-top:0}
+body[data-page="home"] #contact .contact-side-links{
+  align-self:center;
+  justify-self:end;
+  align-items:flex-end;
+  width:100%;
+  max-width:490px;
+  padding:0;
+  gap:20px;
+  text-align:right;
+  font-size:clamp(1.05rem,1.55vw,1.5rem);
+  line-height:1.35;
+}
+body[data-page="home"] #contact .contact-doodles{height:72px}
+#toolkit .tools-block{border-top:0}
+#brand-grid button[data-brand="The LIT School"] img{
+  width:72px;
+  height:72px;
+  max-width:100%;
+  object-position:center;
+}
+#brand-grid button[data-brand="The LIT School"]{padding:8px}
+@media(max-width:800px){
+  body[data-page="home"] #contact{padding-top:32px;padding-bottom:64px;min-height:0}
+  body[data-page="home"] #contact h2{font-size:clamp(2rem,6.5vw,3.2rem);margin-bottom:16px}
+  body[data-page="home"] #contact .contact-main>p{font-size:.92rem;line-height:1.45;margin-bottom:18px}
+  body[data-page="home"] #contact .contact-side-links{margin-top:28px;gap:12px;font-size:1rem;max-width:none}
+  body[data-page="home"] #contact .contact-doodles{height:40px}
+  #brand-grid button[data-brand="The LIT School"] img{width:62px;height:62px}
+}
+
+/* Resume legibility and a consistent text column for tools with or without logos. */
+body.light-mode[data-page="resume"] .timeline-date,
+body.light-mode[data-page="resume"] .timeline-category{color:#071a3d;opacity:1}
+.tool-grid .tool-logo{
+  display:grid!important;
+  grid-template-columns:24px minmax(0,1fr);
+  column-gap:9px;
+  align-items:center;
+}
+.tool-grid .tool-logo>img{grid-column:1;grid-row:1;width:24px;height:24px}
+.tool-grid .tool-logo>strong{grid-column:2;grid-row:1;min-width:0}
+
+/* Explicit resume surfaces prevent the inherited navy/white variables from reversing contrast. */
+body[data-page="resume"]{
+  --resume-surface:#071a3d;
+  --resume-text:#fff;
+  --resume-secondary:#dce5f5;
+  --resume-border:rgba(255,255,255,.25);
+  --resume-button-bg:#fff;
+  --resume-button-text:#071a3d;
+}
+body.light-mode[data-page="resume"]{
+  --resume-surface:#fff;
+  --resume-text:#071a3d;
+  --resume-secondary:#334563;
+  --resume-border:rgba(7,26,61,.2);
+  --resume-button-bg:#071a3d;
+  --resume-button-text:#fff;
+}
+body[data-page="resume"] .resume-profile,
+body[data-page="resume"] .resume-body{
+  background:var(--resume-surface);
+  color:var(--resume-text);
+  --line:var(--resume-border);
+}
+body[data-page="resume"] .resume-profile h1,
+body[data-page="resume"] .resume-role,
+body[data-page="resume"] .resume-section-title,
+body[data-page="resume"] .resume-skill-groups strong,
+body[data-page="resume"] .resume-tools .tool-logo{color:var(--resume-text)}
+body[data-page="resume"] .timeline-date,
+body[data-page="resume"] .timeline-category,
+body[data-page="resume"] .resume-main .timeline-item p,
+body[data-page="resume"] .resume-skill-groups p,
+body[data-page="resume"] .education-row p{color:var(--resume-secondary)}
+body[data-page="resume"] .resume-profile .button-primary{
+  background:var(--resume-button-bg);
+  color:var(--resume-button-text);
+  border:1px solid var(--resume-button-bg);
+}
+body[data-page="resume"] .resume-profile .button-primary:hover,
+body[data-page="resume"] .resume-profile .button-primary:focus-visible{
+  background:var(--resume-surface);
+  color:var(--resume-text);
+  border-color:var(--resume-text);
+}
+body[data-page="resume"] .resume-tools .tool-grid{
+  border:0;
+  grid-template-columns:1fr;
+  gap:0;
+}
+body[data-page="resume"] .resume-tools .tool-logo{
+  border:0;
+  box-shadow:none;
+  background:transparent;
+  min-height:46px;
+  padding:9px 0;
+  grid-template-columns:24px minmax(0,1fr);
+  column-gap:14px;
+}
+body[data-page="resume"] .resume-tools .tool-logo strong{font-size:.85rem;line-height:1.4}
+body.light-mode[data-page="resume"] .resume-tools .tool-logo img{filter:none}
+body:not(.light-mode)[data-page="resume"] .resume-tools .tool-logo img{filter:brightness(0) invert(1)}
+/* The shared footer always uses a navy surface, in either page theme. */
+body .footer{background:#071a3d;color:#fff}
+body .footer p,body .footer .footer-links,body .footer .footer-links a:hover{color:#fff;opacity:1}
+/* Preserve the illustration's full proportions at every viewport width. */
+body[data-page="home"] #contact{
+  --contact-art-height:10.693359375vw;
+  padding-bottom:calc(var(--contact-art-height) + 28px);
+}
+body[data-page="home"] #contact .contact-doodles{
+  left:0;
+  right:0;
+  bottom:0;
+  height:auto;
+  aspect-ratio:2048 / 219;
+  background:none;
+  opacity:.8;
+  mix-blend-mode:screen;
+}
+body[data-page="home"] #contact .contact-doodles img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:none;
+}
+@media(max-width:800px){
+  body[data-page="home"] #contact{padding-bottom:calc(var(--contact-art-height) + 24px)}
+}
+
+/* Keep project metadata side by side at every viewport width. */
+.project-case-study .case-study-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,2vw,24px)}
+.case-study-meta>div{min-width:0;overflow-wrap:anywhere}
+.case-study-section[hidden],.case-study-nav a[hidden]{display:none}
+#modal-project-link:empty{display:none}
+#modal-project-link:not(:empty){margin:0 0 24px}
+@media(max-width:480px){.case-study-meta strong{font-size:.8rem}.case-study-meta span{font-size:.6rem}}
+
+.project-work-photos,.project-work-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:20px 0}.project-work-photos img{display:block;width:100%;height:auto;border-radius:4px}.project-work-videos article{min-width:0}.project-work-videos h4{margin:0 0 12px}.project-work-videos iframe{display:block;width:100%;height:560px;border:0;background:#fff}.project-work-videos .text-link{display:inline-block;margin-top:12px}.work-pending{color:inherit;opacity:.75}@media(max-width:600px){.project-work-photos,.project-work-videos{grid-template-columns:1fr}}
+
+body.light-mode[data-page="content"] .page-hero .page-hero-copy{color:#334563;opacity:1}
+
+.hero-portrait-label{position:absolute;z-index:4;top:22px;left:20px;max-width:calc(100% - 40px);padding:9px 13px;background:#fff;color:#071a3d;border:1px solid #071a3d;font-family:var(--mono);font-size:clamp(.65rem,1.1vw,.8rem);letter-spacing:.04em;line-height:1.4;transform:rotate(-3deg)}
+
+.resume-download-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px}.resume-download-actions .text-link{color:inherit}
