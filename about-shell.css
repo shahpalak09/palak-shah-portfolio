@@ -1,0 +1,11 @@
+/* Change only the page shell; retain the original Framer content and interactions. */
+body[data-page="about"]{background:#071a3d!important}body.light-mode[data-page="about"]{background:#fff!important}
+#main .framer-xx8p7p,#main .framer-13zmu8g-container,#main .framer-g9imqp,#main .framer-3ph58w{display:none!important}
+#main [data-layout-template]>[data-framer-background-image-wrapper],#main [data-framer-root]>[data-framer-background-image-wrapper]{display:none!important}
+#main [data-layout-template]{padding-top:100px!important;background:transparent!important;min-height:0!important}
+#main [data-framer-name="hero"]{margin-top:0}
+body[data-page="about"] .site-header,body[data-page="about"] .mobile-nav,body[data-page="about"] .footer{font-family:var(--sans);line-height:1.5}
+body[data-page="about"] .site-header{z-index:10000}
+body[data-page="about"] .footer{position:relative;z-index:2}
+body[data-page="about"]:not(.light-mode) #main .framer-bfgzl6 p,body[data-page="about"]:not(.light-mode) #main [data-framer-name^="Heading 1"] p{color:white!important;--framer-text-color:#fff!important}
+body[data-page="about"]>canvas:not(#portfolio-trail){display:none!important}
