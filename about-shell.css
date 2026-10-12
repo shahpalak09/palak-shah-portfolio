@@ -9,3 +9,5 @@ body[data-page="about"] .site-header{z-index:10000}
 body[data-page="about"] .footer{position:relative;z-index:2}
 body[data-page="about"]:not(.light-mode) #main .framer-bfgzl6 p,body[data-page="about"]:not(.light-mode) #main [data-framer-name^="Heading 1"] p{color:white!important;--framer-text-color:#fff!important}
 body[data-page="about"]>canvas:not(#portfolio-trail){display:none!important}
+
+.restored-about-intro{padding-top:150px;padding-bottom:60px}.restored-about-facts{padding-top:60px;padding-bottom:90px}.restored-about-facts .fun-facts{margin-top:0}body[data-page="about"] #main [data-layout-template]{padding-top:0!important}
