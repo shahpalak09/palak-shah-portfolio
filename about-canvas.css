@@ -1,0 +1,12 @@
+/* A shared canvas behind the existing About composition. */
+body[data-page="about"]{--canvas-line:rgba(180,202,240,.10);--canvas-x:0px;--canvas-y:0px;background-image:linear-gradient(var(--canvas-line) 1px,transparent 1px),linear-gradient(90deg,var(--canvas-line) 1px,transparent 1px)!important;background-size:28px 28px!important;background-position:var(--canvas-x) var(--canvas-y)!important;background-attachment:fixed!important;overflow-x:hidden}
+body.light-mode[data-page="about"]{--canvas-line:rgba(7,26,61,.075)}
+body[data-page="about"] .restored-about-intro,body[data-page="about"] .restored-about-facts{background:transparent!important}
+body[data-page="about"] .restored-about-intro,body[data-page="about"] #main,body[data-page="about"] .restored-about-facts{translate:var(--canvas-x) 0}
+body.canvas-panning,body.canvas-panning *{cursor:grabbing!important;user-select:none!important}
+.about-canvas-controls{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:10001;display:flex;align-items:center;gap:14px;padding:9px 12px 9px 18px;border:1px solid rgba(150,170,200,.3);border-radius:40px;background:#071a3ded;color:#fff;font:12px/1.4 var(--sans);box-shadow:0 4px 24px #0002;backdrop-filter:blur(12px);white-space:nowrap}
+.light-mode .about-canvas-controls{background:#fffffff0;color:#071a3d}.about-canvas-controls button{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:24px;padding:7px 12px;cursor:pointer}.about-canvas-controls button:focus-visible{outline:3px solid #56b9ed;outline-offset:3px}
+@media(hover:none),(pointer:coarse){.about-canvas-hint{display:none}.about-canvas-controls{padding:6px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){body[data-page="about"]{scroll-behavior:auto}}
+body.light-mode[data-page="about"],body:not(.light-mode)[data-page="about"]{background-image:linear-gradient(var(--canvas-line) 1px,transparent 1px),linear-gradient(90deg,var(--canvas-line) 1px,transparent 1px)!important;background-size:28px 28px!important;background-position:var(--canvas-x) var(--canvas-y)!important;background-attachment:fixed!important}
+body:not(.light-mode)[data-page="about"] .restored-about-intro{color:#fff!important}body:not(.light-mode)[data-page="about"] .restored-about-intro h1,body:not(.light-mode)[data-page="about"] .restored-about-intro p{color:#fff!important}body:not(.light-mode)[data-page="about"] .restored-about-facts>.about-content-link{color:#fff!important}
