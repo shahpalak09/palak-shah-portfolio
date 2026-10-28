@@ -127,3 +127,15 @@ body[data-page="about"] #main [data-layout-template]{padding-left:0!important;pa
 #media-grid > #ecc-xaviers{grid-row:3;grid-column:1}
 #media-grid > #malhar-23{grid-row:3;grid-column:2}
 @media(max-width:560px){#media-grid > #malhar-23{grid-row:4;grid-column:1}}
+
+/* Product shoot BTS joins the third row without overlapping other cards. */
+#media-grid > #product-photoshoot-bts{grid-row:3;grid-column:3}
+@media(max-width:1100px){
+ #media-grid > #product-photoshoot-bts{grid-row:3;grid-column:1}
+ #media-grid > #ecc-xaviers{grid-row:3;grid-column:2}
+ #media-grid > #malhar-23{grid-row:4;grid-column:1}
+}
+@media(max-width:560px){
+ #media-grid > #ecc-xaviers{grid-row:4;grid-column:1}
+ #media-grid > #malhar-23{grid-row:5;grid-column:1}
+}
